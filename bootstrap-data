@@ -1,0 +1,8 @@
+winonly "_vimrc"
+
+# Common sense
+exclude "bootstrap-data"
+exclude "bootstrap.rb"
+exclude "bootstrap.ps1"
+exclude ".gitmodules"
+exclude ".git"
