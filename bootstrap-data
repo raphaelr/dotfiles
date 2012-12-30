@@ -1,6 +1,7 @@
 winonly "_vimrc"
 
 # Common sense
+exclude "README.markdown"
 exclude "bootstrap-data"
 exclude "bootstrap.rb"
 exclude "bootstrap.ps1"
