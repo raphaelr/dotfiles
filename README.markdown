@@ -14,7 +14,8 @@ Open Powershell, `cd` into the directory with my dotfiles and execute this magni
 `./bootstrap.ps1`
 
 ### Linux
-TBD
+Open your favourite shell, make sure that you have a ruby interpreter installed, ´cd´ into the
+directory with the dotfiles and enter this extraordinary command: `./bootstrap.rb`
 
 ### Mac OS X
 Die in a fire.

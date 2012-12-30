@@ -5,6 +5,10 @@ $elements.AddRange((ls | foreach { $_.Name }))
 function winonly($what) {
 }
 
+function linonly($what) {
+    exclude($what)
+}
+
 function exclude($what) {
     $elements.Remove($what)
 }

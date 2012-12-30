@@ -1,4 +1,5 @@
 winonly "_vimrc"
+linonly ".xmodmap"
 
 # Common sense
 exclude "README.markdown"
