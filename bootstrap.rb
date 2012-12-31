@@ -18,6 +18,6 @@ end
 load "./bootstrap-data.rb"
 
 $elements.each do |element|
-    puts "cp -r #{element} .."
-    FileUtils.cp_r(element, "..")
+    puts "#{element} -> .."
+    FileUtils.cp_r(element, "..", :remove_destination => true)
 end
