@@ -7,15 +7,6 @@ Installation
 ------------
 Get this repository by any means neccessary and place it somewhere on your hard drive. Make sure
 the submodules are up-to-date by doing a `git submodule init` followed by a tactical
-`git submodule update`. Then do one of the following:
+`git submodule update`. Make sure ruby is installed, `cd` into this directory and execute
+`ruby bootstrap.rb`.
 
-### Windows
-Open Powershell, `cd` into the directory with my dotfiles and execute this magnificent command:
-`./bootstrap.ps1`
-
-### Linux
-Open your favourite shell, make sure that you have a ruby interpreter installed, ´cd´ into the
-directory with the dotfiles and enter this extraordinary command: `./bootstrap.rb`
-
-### Mac OS X
-Die in a fire.

@@ -3,18 +3,19 @@ require "fileutils"
 
 $elements = Dir.entries(".") - [".", ".."]
 
-def winonly(what)
-    exclude(what)
+def windows?
+    RUBY_PLATFORM =~ /mingw/
 end
 
-def linonly(what)
+def linux?
+    !windows?
 end
 
 def exclude(what)
     $elements.delete(what)
 end
 
-load "./bootstrap-data"
+load "./bootstrap-data.rb"
 
 $elements.each do |element|
     FileUtils.cp_r(element, "..")

@@ -1,10 +1,9 @@
-winonly "_vimrc"
-linonly ".xmodmap"
+exclude "_vimrc" unless windows?
+exclude ".xmodmap" if windows?
 
 # Common sense
 exclude "README.markdown"
-exclude "bootstrap-data"
+exclude "bootstrap-data.rb"
 exclude "bootstrap.rb"
-exclude "bootstrap.ps1"
 exclude ".gitmodules"
 exclude ".git"
