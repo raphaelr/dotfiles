@@ -8,7 +8,7 @@ endif
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
-let g:tagbar_type_javascript = { 'ctagsbin': '~/.vim/dependencies/jsctags/bin/jsctags' }
+let g:tagbar_type_javascript = { 'ctagsbin': '~/.vim/dependencies/jsctags' }
 
 function! InsertModeline()
     let prev_line = line('.')
