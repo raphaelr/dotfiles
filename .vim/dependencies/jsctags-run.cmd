@@ -1,1 +1,0 @@
-@node %~dp0jsctags\bin\jsctags.js %*
