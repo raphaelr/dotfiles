@@ -1,14 +1,12 @@
 set nocompatible
+set re=1
 
 if has("win32")
     set runtimepath^=~/.vim
-    let g:tagbar_ctags_bin = '~/.vim/dependencies/ctags/ctags'
 endif
 
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
-
-let g:tagbar_type_javascript = { 'ctagsbin': '~/.vim/dependencies/jsctags-run' }
 
 function! InsertModeline()
     let prev_line = line('.')
@@ -25,6 +23,7 @@ filetype plugin indent on
 
 set guifont=Droid_Sans_Mono_Slashed:h11
 set expandtab tabstop=4 shiftwidth=4 textwidth=100
+set foldmethod=marker
 set guioptions=arc
 set virtualedit=all
 set backspace=indent,eol,start
@@ -82,6 +81,10 @@ nmap <Space>n <C-W>n
 nmap <Space>p <C-W>p
 nmap <Space>o <C-W>o
 nmap <Space>x <C-W><C-W>
+nmap <Space>+ <C-W>+
+nmap <Space>- <C-W>-
+nmap <Space>< <C-W><
+nmap <Space>> <C-W>>
 
 nmap <Space>t <C-W>T
 nmap <Space>q :tabclose<CR>
