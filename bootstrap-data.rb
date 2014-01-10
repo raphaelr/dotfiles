@@ -1,5 +1,4 @@
 exclude "_vimrc" unless windows?
-exclude ".xmodmap" if windows?
 
 # Common sense
 exclude "README.markdown"
