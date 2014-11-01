@@ -1,0 +1,6 @@
+[user]
+	name = Raphael Robatsch
+	email = raphael-git@tapesoftware.net
+
+[alias]
+    xcommit = !git add -A && git commit
