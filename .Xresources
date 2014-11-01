@@ -1,4 +1,0 @@
-URxvt.background: black
-URxvt.foreground: green
-URxvt.font: xft:Droid Sans Mono Slashed:pixelsize=14
-URxvt.scrollBar: False
