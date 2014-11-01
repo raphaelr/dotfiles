@@ -2,20 +2,7 @@
 require "fileutils"
 
 $elements = Dir.entries(".") - [".", ".."]
-
-def windows?
-    RUBY_PLATFORM =~ /mingw/
-end
-
-def linux?
-    !windows?
-end
-
-def exclude(what)
-    $elements.delete(what)
-end
-
-load "./bootstrap-data.rb"
+          - %w[README.markdown bootstrap.rb .gitmodules .git]
 
 $elements.each do |element|
     puts "#{element} -> .."
