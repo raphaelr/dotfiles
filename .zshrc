@@ -4,10 +4,10 @@ ZSH_THEME="robbyrussell"
 plugins=(common-aliases compleat zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
-source .rvm/scripts/rvm
 
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+export PATH=something
 export EDITOR=vim
+source .rvm/scripts/rvm
 
 PROMPT="[%{$fg[red]%}%n%{$reset_color%}@%{$fg[cyan]%}%m %{$fg[white]%}%B%1~%b]%# "
 
